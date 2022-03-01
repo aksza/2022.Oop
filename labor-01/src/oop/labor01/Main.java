@@ -1,5 +1,6 @@
 package oop.labor01;
 import java.lang.Math;
+import java.util.Arrays;
 
 public class Main {
     public static double maxElement( double array[] ){
@@ -45,13 +46,30 @@ public class Main {
         avg/=array.length;
         return avg;
     }
-    /*public static double stddev(double array[]){
-
-    }*/
+    public static double stddev(double[] array){
+        if(array.length == 0){
+            return Double.NaN;
+        }
+        double mean1 = mean(array);
+        int size = array.length;
+        double[] squares= new double[size];
+        double sum = 0;
+        for(int i=0;i<array.length;++i){
+            squares[i]= Math.pow(Math.abs(array[i] - mean1),2);
+            sum += squares[i];
+        }
+        double frac = (sum/array.length);
+        return (Math.pow(frac,(double) 1/2));
+    }
     public static double[] max2( double array[] ){
-        double max[] ={Double.NEGATIVE_INFINITY,
+        double[] max ={Double.NEGATIVE_INFINITY,
                 Double.NEGATIVE_INFINITY};
         if( array.length == 0 ){
+            max[0] = max[1] = Double.NaN;
+            return max;
+        }
+        if(array.length == 1){
+            max[0] = max[1] = array[0];
             return max;
         }
         else{
@@ -63,6 +81,7 @@ public class Main {
         }
 
     }
+
     public static void main(String[] args) {
         //2.
         /*System.out.println("Suciu Aksza");
@@ -119,8 +138,13 @@ public class Main {
 
          */
         //5.
+        double[] array = {6,2,3,1};
+        System.out.println(stddev(array));
         //6.
         double x[] ={7, 1, -3, 45, 9};
-        System.out.println(max2(x));
+        double[] maxi = max2(x);
+        for (int i=0 ;i<maxi.length;++i){
+            System.out.println(maxi[i]+" ");
+        }
     }
 }

@@ -14,10 +14,12 @@ public class BankAccount {
 
     //getters
     public double getBalance(){
+
         return this.balance;
     }
 
     public String getAccountNumber(){
+
         return this.accountNumber;
     }
 
