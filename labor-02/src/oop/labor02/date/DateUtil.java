@@ -11,10 +11,7 @@ public class DateUtil {
         else{
             if(month == 2){
                 if(leapYear(year)){
-                    if(day > 29){
-                        return false;
-                    }
-                    else return true;
+                    return day <= 29;
                 }
                 else if(day > 28){
                     return false;
