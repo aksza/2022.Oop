@@ -14,6 +14,22 @@ public class Student {
         this.lastName = lastName;
         this.major = major;
     }
+    //getters
+    public Major getMajor() {
+        return this.major;
+    }
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public String getNeptunCode() {
+        return this.neptunCode;
+    }
 
     @Override
     public String toString(){
