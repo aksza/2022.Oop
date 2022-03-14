@@ -79,6 +79,7 @@ public class Main {
         final int MAX_COURSES = 50;
         Course[] courses = new Course[MAX_COURSES];
         int currentNrOfCourses= 0;
+        /*
         //read file
         try {
             File myObj = new File("D:\\egyetem\\elso ev\\masodik felev\\OOP\\Megoldasok\\2022.Oop\\2022.Oop\\extra-03\\src\\oop\\extra03\\models\\university.txt");
@@ -88,18 +89,19 @@ public class Main {
                 String[] wData = data.split("\t");
                 System.out.println(data);
                 courses[currentNrOfCourses] = new Course(wData[0],Integer.parseInt(wData[1]),Integer.parseInt(wData[2]));
-                /*data = myReader.nextLine();
-                wData = data.split("\t");
-                System.out.println(data);
-                courses[currentNrOfCourses]
+                //data = myReader.nextLine();
+                //wData = data.split("\t");
+                //System.out.println(data);
+                //courses[currentNrOfCourses]
 
-                 */
+
             }
             myReader.close();
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+        */
 
 
     }

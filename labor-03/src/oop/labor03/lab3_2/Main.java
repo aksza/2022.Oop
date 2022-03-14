@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Customer customer1 = new Customer("Suciu","Aksza");
         Customer customer2 = new Customer("Suciu","Lidia");
+        // ezt at lehet alakitani forba
         customer1.addAccount(new BankAccount("OTP0001"));
         customer1.addAccount(new BankAccount("OTP0002"));
         customer1.addAccount(new BankAccount("OTP0003"));

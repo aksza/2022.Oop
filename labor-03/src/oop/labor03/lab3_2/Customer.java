@@ -60,13 +60,14 @@ public class Customer {
             if(index >= 0){
 
                 if (numAccounts - 1 - index >= 0)
-                    System.arraycopy(this.accounts, index + 1, this.accounts, index, numAccounts - 1 - index);
+                {System.arraycopy(this.accounts, index + 1, this.accounts, index, numAccounts - 1 - index);
+                numAccounts--;}
+                return;
             }
-            numAccounts--;
+
+
         }
-        if(index == -2){
             System.out.println("Account not found");
-        }
     }
 
     @Override
