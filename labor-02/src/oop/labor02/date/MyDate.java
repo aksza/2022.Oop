@@ -33,7 +33,6 @@ public class MyDate {
         date += this.month;
         date +=".";
         date += this.day;
-        date += ".";
         return date;
     }
 }
