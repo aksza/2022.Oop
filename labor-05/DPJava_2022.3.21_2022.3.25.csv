@@ -1,0 +1,16 @@
+Training{
+	course=Course{name='DPJava', description='Desing Patterns in Java', numHours=0},
+	startDate=date: 2022.3.21,
+	endDate=date: 2022.3.25,
+	pricePerStudent=1271.170232913939
+		Student{ID='1.86102E+12', firstName='Bege', lastName='Istvan'}
+		Student{ID='1.72063E+12', firstName='Biro', lastName='Tamas'}
+		Student{ID='2.89122E+12', firstName='Berekmeri', lastName='Emoke'}
+		Student{ID='1.67051E+12', firstName='Nemes', lastName='Levente'}
+		Student{ID='1.66102E+12', firstName='Biro', lastName='Arpad'}
+		Student{ID='2.84082E+12', firstName='Kerekes', lastName='Izabella'}
+		Student{ID='2.75073E+12', firstName='Nemes', lastName='Csilla'}
+		Student{ID='1.80092E+12', firstName='Juhasz', lastName='Jacint'}
+		Student{ID='1.85092E+12', firstName='Bodo', lastName='Elod'}
+		Student{ID='1.78082E+12', firstName='Godri', lastName='Istvan'}
+}

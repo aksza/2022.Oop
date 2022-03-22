@@ -18,6 +18,7 @@ public class Training {
         this.startDate = new MyDate(startDate1.getYear(),startDate1.getMonth(),startDate1.getDay());
         this.endDate = new MyDate(endDate1.getYear(),endDate1.getMonth(),endDate1.getDay());
         this.pricePerStudent = pricePerStudent1;
+        this.enrolledStudents = new ArrayList<>();
     }
     public Student findStudentById(String ID){
         for(Student student:this.enrolledStudents){
@@ -61,13 +62,17 @@ public class Training {
     }
     @Override
     public String toString() {
-        return "Training{" +
-                "course=" + course +
-                ", startDate=" + startDate +
-                ", endDate=" + endDate +
-                ", pricePerStudent=" + pricePerStudent +
-                ", enrolledStudents=" + enrolledStudents +
-                '}';
+        StringBuilder print = new StringBuilder("Training{\n" + "\tcourse=" + course + ",\n\tstartDate=" + startDate + ",\n\tendDate=" + endDate + ",\n\tpricePerStudent=" + pricePerStudent );
+        if(enrolledStudents == null){
+            print.append('}');
+            return print.toString();
+        }
+        for (Student enrolledStudent : enrolledStudents) {
+            print.append("\n\t\t");
+            print.append(enrolledStudent);
+        }
+        print.append("\n}");
+        return print.toString();
     }
     public void unEnroll(String ID){
         if(findPositionById(ID) != -1){
