@@ -2,15 +2,15 @@ Training{
 	course=Course{name='JavaSpring5', description='Java Enterprise Applications', numHours=0},
 	startDate=date: 2022.3.21,
 	endDate=date: 2022.3.25,
-	pricePerStudent=1428.4173436776223
-		Student{ID='1.85092E+12', firstName='Bodo', lastName='Elod'}
+	pricePerStudent=1395.840469216264
+		Student{ID='1.72063E+12', firstName='Biro', lastName='Tamas'}
+		Student{ID='2.75073E+12', firstName='Nemes', lastName='Csilla'}
 		Student{ID='2.87112E+12', firstName='Laszlo', lastName='Franciska'}
-		Student{ID='2.81051E+12', firstName='Zsido', lastName='Maria'}
 		Student{ID='1.78082E+12', firstName='Godri', lastName='Istvan'}
-		Student{ID='1.66102E+12', firstName='Biro', lastName='Arpad'}
-		Student{ID='2.82061E+12', firstName='Kovacs', lastName='Emese'}
-		Student{ID='2.83072E+12', firstName='Janosi', lastName='Kinga'}
-		Student{ID='2.90112E+12', firstName='Bogacs', lastName='Katalin'}
-		Student{ID='2.89122E+12', firstName='Berekmeri', lastName='Emoke'}
+		Student{ID='1.85092E+12', firstName='Bodo', lastName='Elod'}
 		Student{ID='1.67051E+12', firstName='Nemes', lastName='Levente'}
+		Student{ID='2.83072E+12', firstName='Janosi', lastName='Kinga'}
+		Student{ID='1.86102E+12', firstName='Bege', lastName='Istvan'}
+		Student{ID='2.89122E+12', firstName='Berekmeri', lastName='Emoke'}
+		Student{ID='1.80092E+12', firstName='Juhasz', lastName='Jacint'}
 }
