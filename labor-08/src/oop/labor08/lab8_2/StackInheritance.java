@@ -8,7 +8,7 @@ public class StackInheritance extends ArrayList<Object> {
         this.capacity = capacity;
     }
     public boolean isFull(){
-        return this.size() >= capacity;
+        return this.size() == capacity;
     }
     public boolean isEmpty(){
         return this.size() == 0;
