@@ -24,22 +24,12 @@ public class Car {
     public Car(String carType, String carBrand, int fuelType, boolean maxPassenger, int yearOfManifacture){
         this.carType = carType;
         this.carBrand = carBrand;
-        switch (fuelType){
-            case 0:
-                this.fuelType = FuelType.DIESEL;
-                break;
-            case 1:
-                this.fuelType = FuelType.PETROL;
-                break;
-            case 2:
-                this.fuelType = FuelType.GAS;
-                break;
-            case 3:
-                this.fuelType = FuelType.ELECTRIC;
-                break;
-            default:
-                this.fuelType = FuelType.HYBRID;
-                break;
+        switch (fuelType) {
+            case 0 -> this.fuelType = FuelType.DIESEL;
+            case 1 -> this.fuelType = FuelType.PETROL;
+            case 2 -> this.fuelType = FuelType.GAS;
+            case 3 -> this.fuelType = FuelType.ELECTRIC;
+            default -> this.fuelType = FuelType.HYBRID;
         }
         if(maxPassenger) this.maxPassenger = 5;
         else this.maxPassenger = 2;
