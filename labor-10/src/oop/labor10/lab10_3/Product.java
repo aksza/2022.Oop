@@ -1,6 +1,6 @@
 package oop.labor10.lab10_3;
 
-public class Product {
+public class Product implements Comparable<Product>{
     private final int identifier;
     private String name;
     private int amount;
@@ -27,7 +27,24 @@ public class Product {
     public int getPrice() {
         return price;
     }
-    public void increaseAmount(int newAmount){
-        amount += newAmount;
+    public boolean increaseAmount(int newAmount){
+        if(newAmount > 0) {
+            amount += newAmount;
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Product: \n" +
+                "\tidentifier=" + identifier +
+                "\n\t name='" + name + '\'' +
+                "\n\t amount=" + amount +
+                "\n\t price=" + price;
+    }
+    @Override
+    public int compareTo(Product o) {
+        return this.getIdentifier() - o.getIdentifier();
     }
 }
